@@ -93,32 +93,7 @@ class YDNetResponse<Element: YDHandyJSON>: YDHandyJSON, CustomStringConvertible 
     required init() {}
 }
 
-func H5Url(path: String) -> String {
-    if  gH5BaseURL.last != "/" && path.first != "/" {
-        return gH5BaseURL + "/" + path
-    }
-    return gH5BaseURL + path
-}
-
-func H5SildeUrl(path: String) -> String {
-    if  gH5SildeBaseURL.last != "/" && path.first != "/" {
-        return gH5SildeBaseURL + "/" + path
-    }
-    return gH5SildeBaseURL + path
-}
-
-func QualityUrl(path: String) -> String {
-    if  gQualityURL.last != "/" && path.first != "/" {
-        return gQualityURL + "/" + path
-    }
-    return gQualityURL + path
-}
-
 struct YDNetworkConfig {
-    ///app渠道号
-    // 企业包是2
-    //    static var appChannel = "2"
-    // app store 是38
     static var appChannel = "38"
 }
 
@@ -131,7 +106,7 @@ class YDNetwork {
     class func request<T>(path: YDAPI, needHud: Bool = false, onSuccess: @escaping (YDNetResponse<T>?) -> Void, onFailure: @escaping (YDNetError) -> Void) {
         let urlPath = path.baseURL.absoluteString + path.path
         if YDNetwork.netStatus == .notReachable {
-            let error = YDNetError(status: "FYDLE", message: "没有网络，请检查网络配置～".i18n_common, code: -1)
+            let error = YDNetError(status: "FYDLE", message: "没有网络，请检查网络配置～", code: -1)
             onFailure(error)
             YDLogNetError(path: urlPath, code: -1, status: "DisConnect", msg: "没有网络，请检查网络配置～")
             return

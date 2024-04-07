@@ -8,6 +8,7 @@
 import Foundation
 import KeychainSwift
 import AppTrackingTransparency
+import YDUtilKit
 
 let appname:String = "YDProject"
 
@@ -40,12 +41,12 @@ var systemName = "iOS"
 
 let deviceModel = UIDevice.current.model
 
-let deviceName = UIDevice.current.modelName ?? ""
+let deviceName = UIDevice.current.machineModelName ?? ""
 
 //MARK: ua
 var userAgent:String {
     var channel = "38"
-    let uaStr = appname + "/" + appversion + "/" + buildCode + "/" + channel + "/" + "\(AIConfigue.share.areaType)" + "/" + "(" + systemVersion + "/" + deviceName + ")"
+    let uaStr = appname + "/" + appversion + "/" + buildCode + "/" + channel + "/" + "(" + systemVersion + "/" + deviceName + ")"
     return uaStr
 }
 

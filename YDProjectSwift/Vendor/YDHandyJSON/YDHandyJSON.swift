@@ -43,17 +43,17 @@ public extension Array where Element: YDHandyJSON {
 
     /// if the JSON field finded by `designatedPath` in `json` is representing a array, such as `[{...}, {...}, {...}]`,
     /// this method converts it to a Models array
-    static func artDeserialize(from json: String?, designatedPath: String? = nil) -> [Element?]? {
+    static func ydDeserialize(from json: String?, designatedPath: String? = nil) -> [Element?]? {
         return deserialize(from: json, designatedPath: designatedPath)
     }
 
     /// deserialize model array from NSArray
-    static func artDeserialize(from array: NSArray?) -> [Element?]? {
+    static func ydDeserialize(from array: NSArray?) -> [Element?]? {
         return deserialize(from: array)
     }
 
     /// deserialize model array from array
-    static func artDeserialize(from array: [Any]?) -> [Element?]? {
+    static func ydDeserialize(from array: [Any]?) -> [Element?]? {
         return deserialize(from: array)
     }
 }

@@ -21,7 +21,7 @@ abstract_target 'ArtAIClass' do
   pod 'YDLogger', '~> 0.2.1'
   pod 'YDMonitor', '~> 0.1.0'
   pod 'YDUtilKit', '~> 0.1.1'
-  pod 'YDPlayer', '~> 0.1.2'
+  pod 'YDPlayer', '~> 0.1.3'
   pod 'YDClearCacheService', '~> 0.1.0'
   
   # Pods for Swift

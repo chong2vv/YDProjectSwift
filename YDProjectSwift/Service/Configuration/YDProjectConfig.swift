@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 private let kUserInfoKey = "userinfo"
 
@@ -49,12 +50,12 @@ class YDProjectConfig {
         }
     }
     
-    func updateUserInfo(_ user:AIUserModel?) {
+    func updateUserInfo(_ user:YDUserModel?) {
         guard let user = user, let userStr = userinfo else {
             return
         }
         
-        if let model = AIUserContainerModel.deserialize(from: userStr) {
+        if let model = YDUserContainerModel.deserialize(from: userStr) {
             model.user = user
             self.userinfo = model.toJSONString()
         }
@@ -167,7 +168,6 @@ class YDProjectConfig {
     var experience = ["EXPERIENCE", "SPECIAL"]
     var firstOrder = ["FIRST_ORDER"]
     var renew = ["RENEW"]
-    var launchModel: LaunchModel? = nil
     
     //  管理首页弹窗
     var hasShowAlert:Bool = false

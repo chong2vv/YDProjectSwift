@@ -28,7 +28,7 @@ enum YDNetStatus {
 let kNetStatusChangeNotifation = NSNotification.Name("AINetStatusChange")
 
 //MARK: 网络状态监测
-extension AINetwork {
+extension YDNetwork {
     
     /// 开启网络状态监测
     static func startNetMonitor() {
@@ -44,7 +44,7 @@ extension AINetwork {
             case .reachable(.ethernetOrWiFi):
                 netStatus = .wifi
             }
-            AILog("当前网络状态：" + netStatus.netStatusDes())
+            LogInfo("当前网络状态：" + netStatus.netStatusDes())
             NotificationCenter.default.post(name: kNetStatusChangeNotifation, object: nil)
         })
     }
