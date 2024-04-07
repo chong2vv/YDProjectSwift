@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YDLogger
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        becomeEffective()
+        configAppEnv()
         return true
     }
 
@@ -34,3 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// MARK: config App Env
+extension AppDelegate {
+    func configAppEnv() {
+#if YDProjectSwift
+        LogInfo("======线上环境======")
+#elseif YDProjectSwiftPre
+        LogInfo("======预发环境======")
+#elseif YDProjectSwiftDev
+        LogInfo("======测试环境======")
+#endif
+    }
+}
+
+extension AppDelegate {
+    
+    func becomeEffective() {
+        YDLogger.startLog()
+    }
+}
