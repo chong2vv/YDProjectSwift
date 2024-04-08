@@ -16,8 +16,9 @@ abstract_target 'ArtAIClass' do
   # Pods for ObjC
   pod 'Bugly', '2.5.71', :configurations => 'Release'
   pod 'MarqueeLabel', '4.0.2'
-  pod 'SVProgressHUD', '2.2.5'
+  pod 'YDSVProgressHUD', '~> 0.1.5'
   pod 'MBProgressHUD', '1.1.0'
+  pod 'Moya'
   pod 'YDLogger', '~> 0.2.1'
   pod 'YDMonitor', '~> 0.1.0'
   pod 'YDUtilKit', '~> 0.1.1'
@@ -42,7 +43,6 @@ abstract_target 'ArtAIClass' do
   pod 'ZLPhotoBrowser', '4.1.9'
   pod 'SGQRCode', '3.5.1'
   
-  pod 'lottie-ios', '2.5.2'
 
 
   # Pods for targets

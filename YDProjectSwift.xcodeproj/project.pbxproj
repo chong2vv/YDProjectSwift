@@ -79,6 +79,24 @@
 		156ED7F02BC2447500D3FF74 /* YDUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7EF2BC2447500D3FF74 /* YDUserModel.swift */; };
 		156ED7F12BC2447500D3FF74 /* YDUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7EF2BC2447500D3FF74 /* YDUserModel.swift */; };
 		156ED7F22BC2447500D3FF74 /* YDUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7EF2BC2447500D3FF74 /* YDUserModel.swift */; };
+		156ED7F42BC38F0F00D3FF74 /* YDNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7F32BC38F0F00D3FF74 /* YDNetworkManager.swift */; };
+		156ED7F52BC38F0F00D3FF74 /* YDNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7F32BC38F0F00D3FF74 /* YDNetworkManager.swift */; };
+		156ED7F62BC38F0F00D3FF74 /* YDNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7F32BC38F0F00D3FF74 /* YDNetworkManager.swift */; };
+		156ED7F82BC3904800D3FF74 /* YDNetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7F72BC3904800D3FF74 /* YDNetworkTargetType.swift */; };
+		156ED7F92BC3909100D3FF74 /* YDNetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7F72BC3904800D3FF74 /* YDNetworkTargetType.swift */; };
+		156ED7FA2BC3909200D3FF74 /* YDNetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7F72BC3904800D3FF74 /* YDNetworkTargetType.swift */; };
+		156ED7FC2BC390EC00D3FF74 /* YDNetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7FB2BC390EC00D3FF74 /* YDNetworkLog.swift */; };
+		156ED7FD2BC390EC00D3FF74 /* YDNetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7FB2BC390EC00D3FF74 /* YDNetworkLog.swift */; };
+		156ED7FE2BC390EC00D3FF74 /* YDNetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7FB2BC390EC00D3FF74 /* YDNetworkLog.swift */; };
+		156ED8002BC3941E00D3FF74 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7FF2BC3941E00D3FF74 /* Variables.swift */; };
+		156ED8012BC3941E00D3FF74 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7FF2BC3941E00D3FF74 /* Variables.swift */; };
+		156ED8022BC3941E00D3FF74 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED7FF2BC3941E00D3FF74 /* Variables.swift */; };
+		156ED8052BC3B9B400D3FF74 /* YDHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED8042BC3B9B400D3FF74 /* YDHUD.swift */; };
+		156ED8062BC3B9B400D3FF74 /* YDHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED8042BC3B9B400D3FF74 /* YDHUD.swift */; };
+		156ED8072BC3B9B400D3FF74 /* YDHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED8042BC3B9B400D3FF74 /* YDHUD.swift */; };
+		156ED8092BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED8082BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift */; };
+		156ED80A2BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED8082BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift */; };
+		156ED80B2BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ED8082BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift */; };
 		632EA8E763175CFF3A24FD55 /* libPods-ArtAIClass-YDProjectSwiftDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC62F3889B53C4DC7C2C09B /* libPods-ArtAIClass-YDProjectSwiftDev.a */; };
 		E4F853A8A5D68B3CBBBD3AA8 /* libPods-ArtAIClass-YDProjectSwiftPre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE99ED66D69B063286D3FBC /* libPods-ArtAIClass-YDProjectSwiftPre.a */; };
 		FEFACDF7AFEA25094E48CECC /* libPods-ArtAIClass-YDProjectSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B0FE67FE92E42CD8AA677F /* libPods-ArtAIClass-YDProjectSwift.a */; };
@@ -140,6 +158,12 @@
 		156ED7DB2BBBB1C400D3FF74 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		156ED7EA2BC2443500D3FF74 /* ProgressPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPool.swift; sourceTree = "<group>"; };
 		156ED7EF2BC2447500D3FF74 /* YDUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDUserModel.swift; sourceTree = "<group>"; };
+		156ED7F32BC38F0F00D3FF74 /* YDNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDNetworkManager.swift; sourceTree = "<group>"; };
+		156ED7F72BC3904800D3FF74 /* YDNetworkTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDNetworkTargetType.swift; sourceTree = "<group>"; };
+		156ED7FB2BC390EC00D3FF74 /* YDNetworkLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDNetworkLog.swift; sourceTree = "<group>"; };
+		156ED7FF2BC3941E00D3FF74 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		156ED8042BC3B9B400D3FF74 /* YDHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDHUD.swift; sourceTree = "<group>"; };
+		156ED8082BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDMultiMoyaProvider.swift; sourceTree = "<group>"; };
 		2C391B360530C62996F2495E /* Pods-ArtAIClass-YDProjectSwiftDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtAIClass-YDProjectSwiftDev.release.xcconfig"; path = "Target Support Files/Pods-ArtAIClass-YDProjectSwiftDev/Pods-ArtAIClass-YDProjectSwiftDev.release.xcconfig"; sourceTree = "<group>"; };
 		54E482A1F2A905E687EF8BF6 /* Pods-ArtAIClass-YDProjectSwiftPre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtAIClass-YDProjectSwiftPre.release.xcconfig"; path = "Target Support Files/Pods-ArtAIClass-YDProjectSwiftPre/Pods-ArtAIClass-YDProjectSwiftPre.release.xcconfig"; sourceTree = "<group>"; };
 		5B46EC09C90B3FB79F17475F /* Pods-ArtAIClass-YDProjectSwiftPre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtAIClass-YDProjectSwiftPre.debug.xcconfig"; path = "Target Support Files/Pods-ArtAIClass-YDProjectSwiftPre/Pods-ArtAIClass-YDProjectSwiftPre.debug.xcconfig"; sourceTree = "<group>"; };
@@ -309,8 +333,12 @@
 				156ED7A82BB2BC8300D3FF74 /* YDAPI.swift */,
 				156ED7AC2BB2BE8500D3FF74 /* YDNetwork.swift */,
 				156ED7BC2BB2C14500D3FF74 /* YDNetMonitor.swift */,
+				156ED7F32BC38F0F00D3FF74 /* YDNetworkManager.swift */,
 				156ED7B82BB2C0EB00D3FF74 /* YDNetCache.swift */,
 				156ED7B02BB2C01C00D3FF74 /* YDNetArchive.swift */,
+				156ED7F72BC3904800D3FF74 /* YDNetworkTargetType.swift */,
+				156ED7FB2BC390EC00D3FF74 /* YDNetworkLog.swift */,
+				156ED8082BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift */,
 				156ED7B42BB2C07F00D3FF74 /* JSONArrayEncoding.swift */,
 			);
 			path = NetWork;
@@ -319,6 +347,7 @@
 		156ED7C02BB2C1D200D3FF74 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				156ED8032BC3B99A00D3FF74 /* YDHUD */,
 				156ED7C12BB2C1E700D3FF74 /* YDHandyJSON */,
 			);
 			path = Vendor;
@@ -337,6 +366,7 @@
 			children = (
 				156ED7C72BBBACE600D3FF74 /* YDProjectConfig.swift */,
 				156ED7CB2BBBAD0400D3FF74 /* YDAppConfig.swift */,
+				156ED7FF2BC3941E00D3FF74 /* Variables.swift */,
 				156ED7DB2BBBB1C400D3FF74 /* Constants.swift */,
 			);
 			path = Configuration;
@@ -381,6 +411,14 @@
 				156ED7EF2BC2447500D3FF74 /* YDUserModel.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		156ED8032BC3B99A00D3FF74 /* YDHUD */ = {
+			isa = PBXGroup;
+			children = (
+				156ED8042BC3B9B400D3FF74 /* YDHUD.swift */,
+			);
+			path = YDHUD;
 			sourceTree = "<group>";
 		};
 		D81B9467FDFAC61A48B837F4 /* Frameworks */ = {
@@ -726,16 +764,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156ED7F82BC3904800D3FF74 /* YDNetworkTargetType.swift in Sources */,
 				156ED7CC2BBBAD0400D3FF74 /* YDAppConfig.swift in Sources */,
 				156ED7432BB1686300D3FF74 /* ViewController.swift in Sources */,
+				156ED8002BC3941E00D3FF74 /* Variables.swift in Sources */,
 				156ED7BD2BB2C14500D3FF74 /* YDNetMonitor.swift in Sources */,
+				156ED8092BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift in Sources */,
 				156ED7AD2BB2BE8500D3FF74 /* YDNetwork.swift in Sources */,
 				156ED7A32BB26B8700D3FF74 /* YDLoggerObjc.m in Sources */,
 				156ED7B12BB2C01C00D3FF74 /* YDNetArchive.swift in Sources */,
 				156ED7962BB2674C00D3FF74 /* YDFileManager.swift in Sources */,
+				156ED7F42BC38F0F00D3FF74 /* YDNetworkManager.swift in Sources */,
 				156ED79B2BB26A4300D3FF74 /* YDLogger.swift in Sources */,
 				156ED7D22BBBAEA600D3FF74 /* WebViewLocalStorage.swift in Sources */,
 				156ED7F02BC2447500D3FF74 /* YDUserModel.swift in Sources */,
+				156ED7FC2BC390EC00D3FF74 /* YDNetworkLog.swift in Sources */,
 				156ED7922BB2671700D3FF74 /* YDArchive.swift in Sources */,
 				156ED7EB2BC2443500D3FF74 /* ProgressPool.swift in Sources */,
 				156ED7A92BB2BC8300D3FF74 /* YDAPI.swift in Sources */,
@@ -743,6 +786,7 @@
 				156ED7C82BBBACE600D3FF74 /* YDProjectConfig.swift in Sources */,
 				156ED7B52BB2C07F00D3FF74 /* JSONArrayEncoding.swift in Sources */,
 				156ED7C32BB2C1FB00D3FF74 /* YDHandyJSON.swift in Sources */,
+				156ED8052BC3B9B400D3FF74 /* YDHUD.swift in Sources */,
 				156ED7412BB1686300D3FF74 /* SceneDelegate.swift in Sources */,
 				156ED7B92BB2C0EB00D3FF74 /* YDNetCache.swift in Sources */,
 				156ED7DC2BBBB1C400D3FF74 /* Constants.swift in Sources */,
@@ -770,16 +814,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156ED7FA2BC3909200D3FF74 /* YDNetworkTargetType.swift in Sources */,
 				156ED7CE2BBBAD0400D3FF74 /* YDAppConfig.swift in Sources */,
 				156ED7702BB168F600D3FF74 /* ViewController.swift in Sources */,
+				156ED8022BC3941E00D3FF74 /* Variables.swift in Sources */,
 				156ED7BF2BB2C14500D3FF74 /* YDNetMonitor.swift in Sources */,
+				156ED80B2BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift in Sources */,
 				156ED7AF2BB2BE8500D3FF74 /* YDNetwork.swift in Sources */,
 				156ED7A52BB26B8700D3FF74 /* YDLoggerObjc.m in Sources */,
 				156ED7B32BB2C01C00D3FF74 /* YDNetArchive.swift in Sources */,
 				156ED7982BB2674C00D3FF74 /* YDFileManager.swift in Sources */,
+				156ED7F62BC38F0F00D3FF74 /* YDNetworkManager.swift in Sources */,
 				156ED79D2BB26A4300D3FF74 /* YDLogger.swift in Sources */,
 				156ED7D42BBBAEA600D3FF74 /* WebViewLocalStorage.swift in Sources */,
 				156ED7F22BC2447500D3FF74 /* YDUserModel.swift in Sources */,
+				156ED7FE2BC390EC00D3FF74 /* YDNetworkLog.swift in Sources */,
 				156ED7942BB2671700D3FF74 /* YDArchive.swift in Sources */,
 				156ED7ED2BC2443500D3FF74 /* ProgressPool.swift in Sources */,
 				156ED7AB2BB2BC8300D3FF74 /* YDAPI.swift in Sources */,
@@ -787,6 +836,7 @@
 				156ED7CA2BBBACE600D3FF74 /* YDProjectConfig.swift in Sources */,
 				156ED7B72BB2C07F00D3FF74 /* JSONArrayEncoding.swift in Sources */,
 				156ED7C52BB2C1FB00D3FF74 /* YDHandyJSON.swift in Sources */,
+				156ED8072BC3B9B400D3FF74 /* YDHUD.swift in Sources */,
 				156ED7722BB168F600D3FF74 /* SceneDelegate.swift in Sources */,
 				156ED7BB2BB2C0EB00D3FF74 /* YDNetCache.swift in Sources */,
 				156ED7DE2BBBB1C400D3FF74 /* Constants.swift in Sources */,
@@ -797,16 +847,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156ED7F92BC3909100D3FF74 /* YDNetworkTargetType.swift in Sources */,
 				156ED7CD2BBBAD0400D3FF74 /* YDAppConfig.swift in Sources */,
 				156ED77F2BB168FC00D3FF74 /* ViewController.swift in Sources */,
+				156ED8012BC3941E00D3FF74 /* Variables.swift in Sources */,
 				156ED7BE2BB2C14500D3FF74 /* YDNetMonitor.swift in Sources */,
+				156ED80A2BC3BAAA00D3FF74 /* YDMultiMoyaProvider.swift in Sources */,
 				156ED7AE2BB2BE8500D3FF74 /* YDNetwork.swift in Sources */,
 				156ED7A42BB26B8700D3FF74 /* YDLoggerObjc.m in Sources */,
 				156ED7B22BB2C01C00D3FF74 /* YDNetArchive.swift in Sources */,
 				156ED7972BB2674C00D3FF74 /* YDFileManager.swift in Sources */,
+				156ED7F52BC38F0F00D3FF74 /* YDNetworkManager.swift in Sources */,
 				156ED79C2BB26A4300D3FF74 /* YDLogger.swift in Sources */,
 				156ED7D32BBBAEA600D3FF74 /* WebViewLocalStorage.swift in Sources */,
 				156ED7F12BC2447500D3FF74 /* YDUserModel.swift in Sources */,
+				156ED7FD2BC390EC00D3FF74 /* YDNetworkLog.swift in Sources */,
 				156ED7932BB2671700D3FF74 /* YDArchive.swift in Sources */,
 				156ED7EC2BC2443500D3FF74 /* ProgressPool.swift in Sources */,
 				156ED7AA2BB2BC8300D3FF74 /* YDAPI.swift in Sources */,
@@ -814,6 +869,7 @@
 				156ED7C92BBBACE600D3FF74 /* YDProjectConfig.swift in Sources */,
 				156ED7B62BB2C07F00D3FF74 /* JSONArrayEncoding.swift in Sources */,
 				156ED7C42BB2C1FB00D3FF74 /* YDHandyJSON.swift in Sources */,
+				156ED8062BC3B9B400D3FF74 /* YDHUD.swift in Sources */,
 				156ED7812BB168FC00D3FF74 /* SceneDelegate.swift in Sources */,
 				156ED7BA2BB2C0EB00D3FF74 /* YDNetCache.swift in Sources */,
 				156ED7DD2BBBB1C400D3FF74 /* Constants.swift in Sources */,

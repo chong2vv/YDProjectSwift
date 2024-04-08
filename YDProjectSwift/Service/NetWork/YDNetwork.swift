@@ -108,10 +108,10 @@ class YDNetwork {
         if YDNetwork.netStatus == .notReachable {
             let error = YDNetError(status: "FYDLE", message: "没有网络，请检查网络配置～", code: -1)
             onFailure(error)
-            YDLogNetError(path: urlPath, code: -1, status: "DisConnect", msg: "没有网络，请检查网络配置～")
+            LogError("path:" + urlPath + "," + "code:" + "-1" + "," + "status:" + "DisConnect" + "," + "msg" + "没有网络，请检查网络配置～")
             return
         }
-        NetWorkRequest(path,callbackQueue: .main, networkDidStYD: {
+        NetWorkRequest(path,callbackQueue: .main, networkDidStart: {
             DispatchQueue.main.async {
                 if needHud { YDHUD.showLoading() }
             }
@@ -148,7 +148,7 @@ class YDNetwork {
                     */
                     
                     if let dict = json as? [String: Any] {
-                        YDHttpLog(path: urlPath, response: dict.jsonString() ?? "", logTag: kNetWorkTag)
+//                        YDHttpLog(path: urlPath, response: dict.jsonString() ?? "", logTag: kNetWorkTag)
                         self.decodeWith(dict: dict, path: urlPath, onSuccess: onSuccess, onFailure: onFailure)
                     } else {
                         onFailure(YDNetError.defaultError())
@@ -171,7 +171,8 @@ class YDNetwork {
                 onSuccess(response)
                 return
             }
-            YDNetError(path: path, code: response.code, status: response.status, msg: response.errors ?? "")
+            YDLogNetError(path: path, code: response.code, status: response.status, msg: response.errors ?? "")
+            
             onFailure(YDNetError(status: response.status, message: response.errors ?? (kDefaultError), code: response.code))
         }
     }
