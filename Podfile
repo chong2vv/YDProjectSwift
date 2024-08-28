@@ -21,8 +21,9 @@ abstract_target 'ArtAIClass' do
   pod 'Moya'
   pod 'YDLogger', '~> 0.2.1'
   pod 'YDMonitor', '~> 0.1.0'
-  pod 'YDUtilKit', '~> 0.1.1'
+  pod 'YDUtilKit', '~> 0.1.4'
   pod 'YDPlayer', '~> 0.1.3'
+  pod 'YDAuthorizationUtil', '~> 0.1.0'
   pod 'YDClearCacheService', '~> 0.1.0'
   
   # Pods for Swift
@@ -42,6 +43,7 @@ abstract_target 'ArtAIClass' do
   pod 'SYProgressView', '1.1.3'
   pod 'ZLPhotoBrowser', '4.1.9'
   pod 'SGQRCode', '3.5.1'
+  pod 'SnapKit'
   
 
 

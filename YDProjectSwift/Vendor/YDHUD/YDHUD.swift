@@ -16,4 +16,8 @@ class YDHUD {
     static func dimiss() {
         UIViewController.dismissLoading()
     }
+    
+    static func showToast(_ string:String) {
+        UIViewController.showText(string)
+    }
 }

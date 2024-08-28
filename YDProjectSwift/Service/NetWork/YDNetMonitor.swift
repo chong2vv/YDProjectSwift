@@ -25,7 +25,7 @@ enum YDNetStatus {
 }
 
 /// 网络状态改变通知
-let kNetStatusChangeNotifation = NSNotification.Name("AINetStatusChange")
+let kNetStatusChangeNotifation = NSNotification.Name("YDNetStatusChange")
 
 //MARK: 网络状态监测
 extension YDNetwork {

@@ -7,14 +7,37 @@
 
 import UIKit
 import YDLogger
+@_exported import SnapKit
+@_exported import IQKeyboardManagerSwift
+@_exported import YDAuthorizationUtil
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+//    var window: UIWindow?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        // MARK: Window
+//        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+//        if let window = self.window {
+//            window.backgroundColor = UIColor.white
+//            window.rootViewController = OtherViewController()
+//            window.makeKeyAndVisible()
+//        }
+//        if #available(iOS 13.0, *) {
+//           // 通知注册方式看场景进行添加，不需要可以去除
+//           NotificationCenter.default.addObserver(forName: UIScene.willConnectNotification, object: nil, queue: nil) { (note) in
+//               self.window?.windowScene = note.object as? UIWindowScene
+//           }
+//           // 主要注册
+//           for windowScene in UIApplication.shared.connectedScenes {
+//               if (windowScene.activationState == UIScene.ActivationState.foregroundActive) {
+//                   self.window?.windowScene = windowScene as? UIWindowScene
+//               }
+//           }
+//        }
         becomeEffective()
         configAppEnv()
         return true
@@ -54,5 +77,16 @@ extension AppDelegate {
     
     func becomeEffective() {
         YDLogger.startLog()
+        YDNetwork.startNetMonitor()
+        // MARK: 打印当前运行环境
+        AIPrintEnvironment()
+        LogInfo("appName: \(appdisplayName) appVersion: \(appversion) buildCode: \(buildCode) modelName: \(String(describing: UIDevice.current.machineModelName)) version: \(gSystemVersion)")
+        
+        // MARK: UDID
+        DispatchQueue.global().async {
+            print(">deviceId: \(deviceId)")
+        }
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
     }
 }

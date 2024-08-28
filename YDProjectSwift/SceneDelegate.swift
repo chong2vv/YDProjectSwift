@@ -17,6 +17,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        if let window = self.window {
+            window.backgroundColor = UIColor.white
+            window.rootViewController = OtherViewController()
+            window.makeKeyAndVisible()
+        }
+        if #available(iOS 13.0, *) {
+           // 通知注册方式看场景进行添加，不需要可以去除
+           NotificationCenter.default.addObserver(forName: UIScene.willConnectNotification, object: nil, queue: nil) { (note) in
+               self.window?.windowScene = note.object as? UIWindowScene
+           }
+           // 主要注册
+           for windowScene in UIApplication.shared.connectedScenes {
+               if (windowScene.activationState == UIScene.ActivationState.foregroundActive) {
+                   self.window?.windowScene = windowScene as? UIWindowScene
+               }
+           }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
