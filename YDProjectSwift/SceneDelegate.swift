@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         if let window = self.window {
             window.backgroundColor = UIColor.white
-            window.rootViewController = OtherViewController()
+            window.rootViewController = YDTabBarController()
             window.makeKeyAndVisible()
         }
         if #available(iOS 13.0, *) {

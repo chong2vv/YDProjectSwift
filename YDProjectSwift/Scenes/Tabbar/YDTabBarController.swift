@@ -8,6 +8,7 @@
 import Foundation
 private let KTabBarItemFont = UIFont.YDFont(fontSize: YDDeviceValue(iPhone: 10, iPad: 11))
 private let KTabBarItemDefaultTitleColor = UIColor(hex: "999999")
+
 private let KTabBarItemSelectTitleColor = UIColor(hex: "FF9C00")
 
 private let kItemImageCount: Int = 24

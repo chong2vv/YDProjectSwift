@@ -1,8 +1,9 @@
 $:.unshift __dir__
 require 'Podfile_Hook.rb'
 # Uncomment the next line to define a global platform for your project
-#source 'https://cdn.cocoapods.org/'
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
+# source 'https://github.com/CocoaPods/Specs.git'
+
 
 VERSION = '10.0'
 
